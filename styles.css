@@ -1,0 +1,535 @@
+:root {
+  --ink: #172026;
+  --muted: #5b6670;
+  --paper: #fbfbf8;
+  --band: #eef2ed;
+  --line: #d9ded5;
+  --green: #2f7d5b;
+  --blue: #276c8f;
+  --gold: #a96718;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 14px clamp(18px, 4vw, 56px);
+  background: rgba(251, 251, 248, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+
+.brand {
+  font-weight: 760;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 18px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover,
+.contact-links a:hover,
+.project-card a:hover {
+  color: var(--green);
+}
+
+.hero {
+  position: relative;
+  min-height: min(760px, calc(100vh - 58px));
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #142022;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(9, 22, 24, 0.88), rgba(9, 22, 24, 0.62) 52%, rgba(9, 22, 24, 0.22)),
+    url("assets/davos-cleveland-lidar.png") center / cover;
+  transform: scale(1.04);
+}
+
+.hero-content {
+  position: relative;
+  width: min(1040px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 96px 0 76px;
+  color: var(--white);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #8ddbb7;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  max-width: 920px;
+  margin: 0;
+  font-size: clamp(2.6rem, 7vw, 5.9rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3.2vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.lede {
+  max-width: 760px;
+  margin: 24px 0 0;
+  font-size: clamp(1.05rem, 2vw, 1.32rem);
+  color: #edf5ef;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 720;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button.primary {
+  border-color: #8ddbb7;
+  background: #8ddbb7;
+  color: #10231c;
+}
+
+.intro-band,
+.section,
+.footer {
+  padding-inline: clamp(18px, 4vw, 56px);
+}
+
+.intro-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+  gap: 28px;
+  align-items: stretch;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: var(--band);
+  border-bottom: 1px solid var(--line);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.profile img {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.profile p {
+  max-width: 780px;
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.quick-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.quick-facts div,
+.feature,
+.pub-list article,
+.timeline article,
+.project-card {
+  border: 1px solid var(--line);
+  background: var(--white);
+  border-radius: 8px;
+}
+
+.quick-facts div {
+  padding: 16px;
+}
+
+.quick-facts strong,
+.quick-facts span {
+  display: block;
+}
+
+.quick-facts span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.section-heading {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.34fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature {
+  padding: 24px;
+  border-top: 4px solid var(--green);
+}
+
+.feature:nth-child(2) {
+  border-top-color: var(--blue);
+}
+
+.feature:nth-child(3) {
+  border-top-color: var(--gold);
+}
+
+.feature p,
+.project-card p,
+.pub-list p,
+.timeline p,
+.contact p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.visual-section {
+  max-width: none;
+  background: #f2f5f1;
+}
+
+.visual-section .section-heading,
+.visual-section .project-grid {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #dfe6e2;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-card div {
+  padding: 18px;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.text-card {
+  justify-content: center;
+  min-height: 100%;
+}
+
+.pub-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pub-list article {
+  padding: 18px;
+}
+
+.pub-type {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.timeline article {
+  padding: 20px;
+}
+
+.timeline span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.visitor-feature {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.48fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--white);
+}
+
+.visitor-feature img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.visitor-feature div {
+  padding: 24px;
+}
+
+.visitor-feature p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.visitor-feature a {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.two-column,
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.clean-list {
+  display: grid;
+  gap: 14px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clean-list li {
+  padding-left: 18px;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+}
+
+.clean-list strong {
+  color: var(--ink);
+}
+
+.contact {
+  align-items: start;
+  border-top: 1px solid var(--line);
+}
+
+.contact p {
+  margin-top: 18px;
+  max-width: 700px;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.contact-links a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  text-decoration: none;
+  font-weight: 720;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  background: var(--band);
+}
+
+@media (max-width: 1040px) {
+  .intro-band,
+  .two-column,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .research-grid,
+  .pub-list,
+  .timeline,
+  .visitor-feature,
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    position: static;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .hero {
+    min-height: 680px;
+  }
+
+  .hero-bg {
+    background:
+      linear-gradient(0deg, rgba(9, 22, 24, 0.9), rgba(9, 22, 24, 0.5)),
+      url("assets/davos-cleveland-lidar.png") center / cover;
+  }
+
+  .profile {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .profile img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .quick-facts,
+  .section-heading,
+  .research-grid,
+  .pub-list,
+  .timeline,
+  .visitor-feature,
+  .project-grid,
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
