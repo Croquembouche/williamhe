@@ -14,6 +14,7 @@
       <nav class="tabs" aria-label="Website sections">
         <button class="tab is-active" type="button" data-tab="home">Home</button>
         <button class="tab" type="button" data-tab="news">News</button>
+        <button class="tab" type="button" data-tab="funding">Funding</button>
         <button class="tab" type="button" data-tab="projects">Projects</button>
         <button class="tab" type="button" data-tab="publications">Publications</button>
         <button class="tab" type="button" data-tab="talks">Talks</button>
@@ -89,133 +90,398 @@
       <section id="news" class="panel" data-panel="news" tabindex="-1">
         <div class="panel-heading">
           <p class="eyebrow">News and Mentions</p>
-          <h1>Recent activity, visitors, and lab milestones.</h1>
-          <p>Selected milestones across invited tutorials, paper acceptances, course launches, project releases, visitors, and lab demos.</p>
+          <h1>Selected public updates, awards, and lab milestones.</h1>
+          <p>Updated through June 16, 2026. This feed draws from public workshop pages, university stories, publication records, and public posts rather than a separate image rail.</p>
         </div>
 
-        <div class="news-layout">
-          <div class="news-timeline">
-            <article>
-              <time>May 2026</time>
-              <h2>IEEE IV 2026 Autoware Tutorial</h2>
-              <p>William He is presenting an Autoware tutorial with members of the Autoware Foundation at the IEEE IV 2026 workshop in Detroit.</p>
-              <a href="https://autoware.org/iv2026workshop/">Workshop page</a>
+        <div class="news-stream">
+          <section class="news-year" aria-labelledby="news-2026">
+            <div class="news-year-header">
+              <p class="eyebrow">2026</p>
+              <h2 id="news-2026">Awards, invited talks, and accepted papers</h2>
+            </div>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>June 2026</time>
+                <span class="news-kind">Tutorial</span>
+              </div>
+              <div class="news-copy">
+                <h3>Autoware workshop tutorial at IEEE IV 2026</h3>
+                <p>William He is part of the Autoware workshop program at IEEE Intelligent Vehicles Symposium 2026 in Detroit, with the tutorial and workshop scheduled for June 22, 2026.</p>
+                <div class="news-links">
+                  <a href="https://autoware.org/iv2026workshop/">Workshop page</a>
+                </div>
+              </div>
+              <figure>
+                <img src="assets/news/autoware-iv2026.png" alt="Autoware workshop banner for IEEE IV 2026" loading="lazy">
+                <figcaption>Official IV 2026 Autoware workshop banner</figcaption>
+              </figure>
             </article>
-            <article>
-              <time>April 2026</time>
-              <h2>DaVoS Accepted to PISA 2026</h2>
-              <p>DaVoS, an instantaneous safety model for autonomous vehicles, was accepted to the PISA workshop at IEEE MOST 2026.</p>
-              <a href="https://ieeemobility.org/MOST2026/program.php">IEEE MOST 2026 program</a>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>June 2026</time>
+                <span class="news-kind">Invited Talk</span>
+              </div>
+              <div class="news-copy">
+                <h3>Invited to speak on digital twins for intelligent vehicles</h3>
+                <p>The DT-IV workshop program for IEEE IV 2026 lists William He for a talk on indoor CAV testbeds and 3D twins for edge and onboard vehicle computing.</p>
+                <div class="news-links">
+                  <a href="https://civildigitaltwins.org/IEEE_IV_2026_DT/schedule.html">Workshop schedule</a>
+                  <a href="https://civildigitaltwins.org/IEEE_IV_2026_DT/">Workshop overview</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>Jan. 2026</time>
-              <h2>Two IEEE IV 2026 Papers Accepted</h2>
-              <p>Two papers were accepted to IEEE IV 2026: one on faster, more reliable autonomous-driving middleware and one on graph-based dataset diversity and redundancy evaluation.</p>
-              <a href="https://www.linkedin.com/posts/williamhecoin_autonomousdriving-intelligentvehicles-activity-7417978670385983489-NDzj">Public post</a>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>May 2026</time>
+                <span class="news-kind">Award</span>
+              </div>
+              <div class="news-copy">
+                <h3>Received the Pehrson Award and Chester Fellowship</h3>
+                <p>William He announced receiving the Frank A. Pehrson Graduate Student Award for Outstanding Computer Science Research and the Daniel L. Chester Graduate Fellowship Award at the University of Delaware.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/williamhecoin_udel-udelengineering-computerscience-activity-7456791926579736576-Uc0D">Public post</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>2025</time>
-              <h2>Introduction to Autonomous Driving Course</h2>
-              <p>Launched a University of Delaware course giving students hands-on exposure to self-driving technology with scaled and real-world autonomous vehicles.</p>
-              <a href="https://www.linkedin.com/posts/williamhecoin_autonomousvehicles-ai-engineeringeducation-activity-7343632177244368899-1aIM">Public post</a>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>April 2026</time>
+                <span class="news-kind">Paper</span>
+              </div>
+              <div class="news-copy">
+                <h3>DaVoS accepted to the PISA workshop at IEEE MOST 2026</h3>
+                <p>DaVoS introduces a physics-based, platform-agnostic safety model for autonomous vehicles and was accepted to the Physical Intelligence: Systems and Applications workshop.</p>
+                <div class="news-links">
+                  <a href="https://ieeemobility.org/MOST2026/program.php">IEEE MOST 2026 program</a>
+                  <a href="https://www.linkedin.com/posts/williamhecoin_autonomousvehicles-avsafety-selfdrivingcars-activity-7442226159322468352-NFEE">Public post</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>April 2025</time>
-              <h2>Autonomous Driving Academy Featured by UD</h2>
-              <p>Launched a summer Autonomous Driving Academy for high-school students with William He, Weisong Shi, and Ren Zhong as program leaders.</p>
-              <a href="https://www.cis.udel.edu/2025/04/09/autonomous-driving-academy-gets-in-gear/">CIS story</a>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Jan. 2026</time>
+                <span class="news-kind">Paper</span>
+              </div>
+              <div class="news-copy">
+                <h3>Two papers accepted to IEEE IV 2026</h3>
+                <p>The 2026 cycle added two accepted papers: one on faster and more reliable autonomous-driving middleware, and one on graph-based dataset diversity and redundancy evaluation.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/williamhecoin_autonomousdriving-intelligentvehicles-activity-7417978670385983489-NDzj">Public post</a>
+                  <a href="https://www.thecarlab.org/outcomes/publications">CAR Lab publications</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>2025</time>
-              <h2>STARTaxi on UD STAR Campus</h2>
-              <p>Introduced STARTaxi, a Lincoln MKZ-based L4 autonomous ride-hailing service powered by Autoware and DAVOS, led by William He and Yuxin Wang.</p>
-              <a href="https://www.linkedin.com/posts/williamhecoin_startaxi-autoware-davos-activity-7327467545584705536-tpoO">William He post</a>
+          </section>
+
+          <section class="news-year" aria-labelledby="news-2025">
+            <div class="news-year-header">
+              <p class="eyebrow">2025</p>
+              <h2 id="news-2025">Course launches, public demos, and open-source releases</h2>
+            </div>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Fall 2025</time>
+                <span class="news-kind">Teaching</span>
+              </div>
+              <div class="news-copy">
+                <h3>Launched Introduction to Autonomous Driving at Delaware</h3>
+                <p>William He launched the graduate course Introduction to Autonomous Driving, later listed in the CV as required curriculum in the M.S. in AI autonomous driving concentration.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/williamhecoin_autonomousvehicles-ai-engineeringeducation-activity-7343632177244368899-1aIM">Public post</a>
+                  <a href="assets/Yuankai-William-He-CV.pdf">CV</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>2025</time>
-              <h2>STARTaxi Debut at IEEE MOST 2025</h2>
-              <p>IEEE MOST attendees rode STARTaxi during the conference; the app was built by UD undergraduate capstone students working with the CAR Lab.</p>
-              <a href="https://www.linkedin.com/posts/weisongshi_startaxi-startaxi-autoware-activity-7327053922571894784-repS">Public post</a>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Sept. 2025</time>
+                <span class="news-kind">Showcase</span>
+              </div>
+              <div class="news-copy">
+                <h3>HydraU and STARTaxi featured in a SafeAI and EdgeAI showcase</h3>
+                <p>A public CAR Lab update highlighted live rides on HydraU, the STARTaxi stack, and projects supported by NSF and industry collaborators including Western Digital, Cisco, Dell Technologies, Tier IV, and the Autoware Foundation.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/weisongshi_safeai-edgeai-autonomousmobilerobots-activity-7367564673950384130-Z7Eu">Public post</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>2025</time>
-              <h2>IPI Open-Sourced</h2>
-              <p>Released the Intersection Programming Interface, an open API and reference implementation for software-defined intersections and V2X infrastructure.</p>
-              <a href="https://www.linkedin.com/posts/weisongshi_github-thecarlabipi-activity-7383856583295959040-KKlw">Public post</a>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>July 2025</time>
+                <span class="news-kind">Education</span>
+              </div>
+              <div class="news-copy">
+                <h3>Autonomous Driving Academy ran at the University of Delaware</h3>
+                <p>UD publicized the academy led by William He, Weisong Shi, and Ren Zhong, extending CAR Lab work into a pre-college autonomous driving program.</p>
+                <div class="news-links">
+                  <a href="https://www.cis.udel.edu/2025/04/09/autonomous-driving-academy-gets-in-gear/">CIS story</a>
+                  <a href="https://www.udel.edu/udaily/2025/march/autonomous-driving-academy-gets-in-gear/">UDaily story</a>
+                  <a href="https://www.pcs.udel.edu/autonomous-driving/">Program page</a>
+                </div>
+              </div>
+              <figure>
+                <img src="assets/news/autonomous-driving-academy-2025.jpg" alt="Autonomous Driving Academy leaders with a model car" loading="lazy">
+                <figcaption>Autonomous Driving Academy, University of Delaware</figcaption>
+              </figure>
             </article>
-            <article>
-              <time>2025</time>
-              <h2>ADASTEC Visit and STARTaxi Demo</h2>
-              <p>The CAR Lab hosted ADASTEC leadership and demonstrated STARTaxi with William He, Ren Zhong, Boyang Tian, and Weisong Shi.</p>
-              <a href="https://www.linkedin.com/posts/thecarlab_industrycollaboration-autonomousdriving-activity-7336017570396864512-b7ZU">Public post</a>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>May 2025</time>
+                <span class="news-kind">Demo</span>
+              </div>
+              <div class="news-copy">
+                <h3>STARTaxi debuted during IEEE MOST 2025</h3>
+                <p>The CAR Lab introduced STARTaxi as an academic autonomous ride-hailing service on STAR Campus, with William He and Yuxin Wang leading the vehicle side and undergraduate students building the app.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/weisongshi_startaxi-startaxi-autoware-activity-7327053922571894784-repS">Public post</a>
+                  <a href="https://www.linkedin.com/posts/williamhecoin_startaxi-autoware-davos-activity-7327467545584705536-tpoO">William He post</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>Nov. 2024</time>
-              <h2>BlueICE and ICAT Presentation at RSGO</h2>
-              <p>Presented work on scalable and seamless autonomous-driving simulation, BlueICE, and ICAT to the RSGO group.</p>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Oct. 2025</time>
+                <span class="news-kind">Open Source</span>
+              </div>
+              <div class="news-copy">
+                <h3>OpenIntersection and IPI were released publicly</h3>
+                <p>The IPI release turned the OpenIntersection work into a public repository for software-defined intersections, V2X-facing APIs, and reproducible infrastructure experiments.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/williamhecoin_github-thecarlabipi-activity-7383698775606980608-8ZMZ">Public post</a>
+                  <a href="https://github.com/Croquembouche/IPI">Repository</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>Aug. 2024</time>
-              <h2>Tier IV Visit</h2>
-              <p>Hosted Christian John, President of Tier IV North America and Vice Chair of the Autoware Foundation Strategic Planning Committee, at the CAR Lab.</p>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>June 2025</time>
+                <span class="news-kind">Visitor</span>
+              </div>
+              <div class="news-copy">
+                <h3>Hosted ADASTEC leadership and demonstrated STARTaxi</h3>
+                <p>The CAR Lab hosted ADASTEC visitors and used the visit to show STARTaxi and ongoing autonomy work involving William He, Ren Zhong, Boyang Tian, and Weisong Shi.</p>
+                <div class="news-links">
+                  <a href="https://www.linkedin.com/posts/thecarlab_industrycollaboration-autonomousdriving-activity-7336017570396864512-b7ZU">CAR Lab post</a>
+                  <a href="https://www.linkedin.com/posts/cemrekavvasoglu_we-had-a-great-time-visiting-the-car-lab-activity-7336135203536388098-8s3Q">Visitor post</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>July 2024</time>
-              <h2>Faculty Visitor Group</h2>
-              <p>Hosted faculty visitors from University of Virginia, William & Mary, Auburn, UMass Dartmouth, Yeshiva, Stony Brook, Howard, and Wayne State.</p>
+          </section>
+
+          <section class="news-year" aria-labelledby="news-2024">
+            <div class="news-year-header">
+              <p class="eyebrow">2024</p>
+              <h2 id="news-2024">Publication visibility, tutorials, and visitors</h2>
+            </div>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Dec. 2024</time>
+                <span class="news-kind">Publication</span>
+              </div>
+              <div class="news-copy">
+                <h3>IEEE Computer published “A Vision for Transformative Intersections”</h3>
+                <p>The vision article framed OpenIntersection as a software-defined infrastructure direction and connected it to the Autoware ecosystem and real-world deployment paths.</p>
+                <div class="news-links">
+                  <a href="https://www.weisongshi.org/publications.html">Publication page</a>
+                  <a href="https://www.linkedin.com/posts/williamhecoin_a-vision-for-transformative-intersections-activity-7266616375295586304-A9VI">Public post</a>
+                </div>
+              </div>
             </article>
-            <article>
-              <time>July 2024</time>
-              <h2>Introduction to Mobile Robot Programming</h2>
-              <p>Taught a summer course at UD using ICAT and Autoware for hands-on mobile robotics and autonomous-driving programming.</p>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>Nov. 2024</time>
+                <span class="news-kind">Talk</span>
+              </div>
+              <div class="news-copy">
+                <h3>Presented BlueICE and ICAT to the RSGO group</h3>
+                <p>The talk focused on scalable autonomous-driving simulation and testbed work, extending the digital-twin and validation story around BlueICE and ICAT.</p>
+              </div>
+              <figure>
+                <img src="assets/old-site/rsgo-presentation.jpg" alt="William He presenting BlueICE and ICAT" loading="lazy">
+                <figcaption>BlueICE and ICAT presentation at RSGO</figcaption>
+              </figure>
             </article>
-            <article>
-              <time>May 2024</time>
-              <h2>Autoware Tutorial at IEEE MOST 2024</h2>
-              <p>Gave an Autoware tutorial including a live ICAT demonstration at IEEE MOST 2024 in Dallas.</p>
-              <a href="https://ieeemobility.org/MOST2024/MOST%202024%20Program.pdf">MOST 2024 program</a>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>Aug. 2024</time>
+                <span class="news-kind">Visitor</span>
+              </div>
+              <div class="news-copy">
+                <h3>Hosted Tier IV North America leadership at the CAR Lab</h3>
+                <p>Christian John, President of Tier IV North America and vice chair of the Autoware Foundation strategic planning committee, visited the lab during a period of active collaboration.</p>
+              </div>
+              <figure>
+                <img src="assets/old-site/tieriv-visit.jpg" alt="Group photo from the Tier IV visit" loading="lazy">
+                <figcaption>Tier IV visit to the CAR Lab</figcaption>
+              </figure>
             </article>
-            <article>
-              <time>May 2024</time>
-              <h2>AutoSens ICAT Tutorial</h2>
-              <p>Gave an AutoSens tutorial with Weisong Shi on ICAT, connected vehicles, and Autoware integration.</p>
-              <a href="https://www.linkedin.com/posts/thecarlab_autoware-activity-7193453958508486656-SVKp">Public post</a>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>July 2024</time>
+                <span class="news-kind">Teaching</span>
+              </div>
+              <div class="news-copy">
+                <h3>Taught Introduction to Mobile Robot Programming</h3>
+                <p>The summer course used ICAT and Autoware for hands-on programming with connected and autonomous mobile robots.</p>
+              </div>
+              <figure>
+                <img src="assets/old-site/mobile-robot-programming.jpg" alt="William He teaching a mobile robot programming course" loading="lazy">
+                <figcaption>Summer mobile robot programming course</figcaption>
+              </figure>
             </article>
-            <article>
-              <time>Jan. 2024</time>
-              <h2>Dell, Red Hat, and Cisco Visit</h2>
-              <p>Hosted industry leaders from Dell Technologies, Red Hat, and Cisco at the CAR Lab for facilities and project discussions.</p>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>July 2024</time>
+                <span class="news-kind">Visitor</span>
+              </div>
+              <div class="news-copy">
+                <h3>Hosted a visiting faculty group at the CAR Lab</h3>
+                <p>The visitor group included faculty from UVA, William &amp; Mary, Auburn, UMass Dartmouth, Yeshiva, Stony Brook, Howard, and Wayne State.</p>
+              </div>
+              <figure>
+                <img src="assets/old-site/faculty-visit.jpg" alt="Faculty visitor group at the CAR Lab" loading="lazy">
+                <figcaption>Faculty visitors to the CAR Lab</figcaption>
+              </figure>
             </article>
-            <article>
-              <time>Dec. 2023</time>
-              <h2>CAR Lab Move to UD STAR Campus</h2>
-              <p>The CAR Lab completed its transition to the University of Delaware STAR Campus, marking a new phase for vehicle-computing research.</p>
-              <a href="https://www.linkedin.com/posts/thecarlab_star-activity-7137140482270203905-OqZG">Public post</a>
+            <article class="news-card has-media">
+              <div class="news-meta">
+                <time>May 2024</time>
+                <span class="news-kind">Tutorial</span>
+              </div>
+              <div class="news-copy">
+                <h3>Gave an Autoware tutorial at IEEE MOST 2024</h3>
+                <p>The tutorial included a live ICAT demonstration at IEEE MOST 2024 in Dallas and complemented the ICAT paper accepted to the same conference.</p>
+                <div class="news-links">
+                  <a href="https://ieeemobility.org/MOST2024/MOST%202024%20Program.pdf">MOST 2024 program</a>
+                  <a href="https://www.linkedin.com/posts/thecarlab_fyi-activity-7190144654938398720-e0XF">Public post</a>
+                </div>
+              </div>
+              <figure>
+                <img src="assets/old-site/autoware-tutorial.jpg" alt="Autoware tutorial poster for IEEE MOST 2024" loading="lazy">
+                <figcaption>IEEE MOST 2024 Autoware tutorial</figcaption>
+              </figure>
+            </article>
+          </section>
+
+          <section class="news-year" aria-labelledby="news-2023">
+            <div class="news-year-header">
+              <p class="eyebrow">2023</p>
+              <h2 id="news-2023">Earlier milestones tied to the current research arc</h2>
+            </div>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Dec. 2023</time>
+                <span class="news-kind">Publication</span>
+              </div>
+              <div class="news-copy">
+                <h3>C-V2X collaborative autonomous driving paper appeared in IEEE TVT</h3>
+                <p>The first-author IEEE Transactions on Vehicular Technology paper established one of the key foundations behind later OpenIntersection and IPI work.</p>
+                <div class="news-links">
+                  <a href="https://www.thecarlab.org/outcomes/publications">CAR Lab publications</a>
+                </div>
+              </div>
+            </article>
+            <article class="news-card">
+              <div class="news-meta">
+                <time>Oct. 2023</time>
+                <span class="news-kind">Lab Move</span>
+              </div>
+              <div class="news-copy">
+                <h3>Quoted during the STAR Campus and FinTech Innovation Hub opening</h3>
+                <p>A UDaily story on the new space quoted William He on how the co-location of faculty, labs, and partners made cross-group collaboration easier in person.</p>
+                <div class="news-links">
+                  <a href="https://www.udel.edu/udaily/2023/october/ribbon-cutting-fintech-innovation-hub/">UDaily story</a>
+                  <a href="https://www.linkedin.com/posts/thecarlab_star-activity-7137140482270203905-OqZG">Public post</a>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section id="funding" class="panel" data-panel="funding" tabindex="-1">
+        <div class="panel-heading">
+          <p class="eyebrow">Funding</p>
+          <h1>External research support, proposal roles, and fellowships.</h1>
+          <p>Sourced from the current CV and faculty-application materials. Totals reflect proposal and research participation, not independent PI status.</p>
+        </div>
+        <div class="compact-grid funding-summary">
+          <article>
+            <span>Total support</span>
+            <h2>$871K</h2>
+            <p>Lead graduate researcher and proposal contributor across externally supported work.</p>
+          </article>
+          <article>
+            <span>Industry-supported</span>
+            <h2>$180K</h2>
+            <p>Tier IV and Toyota-supported research on Autoware, IPI, and open intersections.</p>
+          </article>
+          <article>
+            <span>Government / NSF</span>
+            <h2>$691K</h2>
+            <p>Collaborative work on edge computing, connected autonomy, and dependable CPS infrastructure.</p>
+          </article>
+        </div>
+
+        <div class="project-cluster">
+          <h2>External Research Support</h2>
+          <div class="funding-grid">
+            <article class="funding-card">
+              <div class="funding-card-header">
+                <span>Tier IV</span>
+                <time>11/2024 - 10/2025</time>
+              </div>
+              <h3>Design and Implementation of Infrastructure Programming Interface (IPI)</h3>
+              <p>Proposal contributor and lead graduate researcher.</p>
+            </article>
+            <article class="funding-card">
+              <div class="funding-card-header">
+                <span>Tier IV</span>
+                <time>09/2023 - 08/2024</time>
+              </div>
+              <h3>Investigating the Effect of C-V2X on Autoware.Universe</h3>
+              <p>Proposal contributor and lead graduate researcher.</p>
+            </article>
+            <article class="funding-card">
+              <div class="funding-card-header">
+                <span>Toyota</span>
+                <time>01/2024 - 12/2024</time>
+              </div>
+              <h3>Open Intersection Reference Design and Implementation</h3>
+              <p>Proposal contributor and lead graduate researcher.</p>
+            </article>
+            <article class="funding-card">
+              <div class="funding-card-header">
+                <span>CADaas / NSF</span>
+                <time>03/2025 - 02/2028</time>
+              </div>
+              <h3>Deterministic Communication and Predictive Computation for Connected Autonomous Driving as a Service</h3>
+              <p>Proposal contributor and lead graduate researcher.</p>
+            </article>
+            <article class="funding-card">
+              <div class="funding-card-header">
+                <span>NSF CNS</span>
+                <time>01/2022 - 12/2024</time>
+              </div>
+              <h3>Enabling Real-time, Scalable and Secure Collaborative Intelligence on the Edge</h3>
+              <p>Proposal contributor.</p>
             </article>
           </div>
+        </div>
 
-          <aside class="media-wall" aria-label="News photos">
-            <figure>
-              <img src="assets/news/autoware-iv2026.png" alt="Autoware workshop graphic for IEEE IV 2026">
-              <figcaption>Autoware IV 2026 workshop</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/news/davos-site-2026.png" alt="DAVOS autonomous driving operating system site">
-              <figcaption>DAVOS project site, 2026</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/news/autonomous-driving-academy-2025.jpg" alt="Autonomous Driving Academy leaders with model car">
-              <figcaption>Autonomous Driving Academy, 2025</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/carscenes-attribute-distribution.png" alt="CARScenes dataset attribute distribution chart">
-              <figcaption>CARScenes benchmark workspace</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/davos-cleveland-lidar.png" alt="DAVOS LiDAR and driving visualization">
-              <figcaption>DAVOS autonomy runtime</figcaption>
-            </figure>
-          </aside>
+        <div class="project-cluster">
+          <h2>Fellowships and Research Recognition</h2>
+          <div class="two-column">
+            <article class="statement-card">
+              <h2>Frank A. Pehrson Graduate Student Award</h2>
+              <p>University of Delaware, 2026. Single-recipient CIS graduate research award for outstanding computer science research.</p>
+            </article>
+            <article class="statement-card">
+              <h2>Daniel L. Chester Graduate Fellowship Award</h2>
+              <p>University of Delaware, 2025 and 2026. Annual CIS graduate fellowship awarded in consecutive years.</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -371,7 +637,7 @@
       <section id="service" class="panel" data-panel="service" tabindex="-1">
         <div class="panel-heading">
           <p class="eyebrow">Service</p>
-          <h1>Professional service, leadership, awards, and mentoring.</h1>
+          <h1>Professional service, leadership, and mentoring.</h1>
         </div>
         <div class="two-column">
           <article class="statement-card">
@@ -397,10 +663,11 @@
             <p>AAAI, CVPR, TRB Annual Meeting, IEEE WCNC, IEEE Vehicular Technology Conference, IEEE SEC, IEEE MOST, ACM Computing Surveys, and Multimedia Tools and Applications.</p>
           </article>
           <article class="statement-card">
-            <h2>Awards</h2>
+            <h2>Mentoring</h2>
             <ul>
-              <li>Frank A. Pehrson Graduate Student Award for Outstanding Computer Science Research, 2026.</li>
-              <li>Daniel L. Chester Graduate Fellowship Award, 2025 and 2026.</li>
+              <li>CISC Graduate Promotion Unit founder and president.</li>
+              <li>VIP Mentor, University of Delaware.</li>
+              <li>DSU-UD Summer Engineering Research Experience mentor.</li>
             </ul>
           </article>
         </div>
