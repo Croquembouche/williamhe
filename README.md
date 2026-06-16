@@ -1,6 +1,7 @@
 # Yuankai (William) He Personal Website
 
-Static professional website for Yuankai (William) He.
+Static professional website for Yuankai (William) He with tabbed sections for
+profile, news, projects, publications, talks, teaching, service, and contact.
 
 ## Files
 
@@ -8,6 +9,7 @@ Static professional website for Yuankai (William) He.
 - `styles.css` - responsive visual design
 - `assets/Yuankai-William-He-CV.pdf` - downloadable CV
 - `assets/` research visuals used by the site
+- `assets/old-site/` - locally captured legacy Google Sites news photos
 
 ## Local Preview
 
@@ -19,6 +21,8 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Adding Visitor Photos
+## Updating News or Visitor Photos
 
-Place approved visitor or event photos in `assets/visitors/`, then add them to the Talks, Visitors, and Community section in `index.html`.
+Place approved visitor or event photos in `assets/old-site/` or another
+subfolder under `assets/`, then add a `figure` entry to the News tab in
+`index.html`.
