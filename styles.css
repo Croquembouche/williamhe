@@ -434,10 +434,6 @@ p {
   margin-bottom: 0;
 }
 
-.news-year-header h2 {
-  font-size: clamp(1.45rem, 2.1vw, 2.15rem);
-}
-
 .news-card {
   display: grid;
   grid-template-columns: 132px minmax(0, 1fr);
