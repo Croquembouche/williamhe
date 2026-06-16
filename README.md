@@ -7,6 +7,8 @@ profile, news, projects, publications, talks, teaching, service, and contact.
 
 - `index.html` - content and page structure
 - `styles.css` - responsive visual design
+- `site.js` - progressive section navigation and hash handling
+- `hero-three.js` - optional Three.js research-network canvas for the hero
 - `assets/Yuankai-William-He-CV.pdf` - downloadable CV
 - `assets/` research visuals used by the site
 - `assets/old-site/` - locally captured legacy Google Sites news photos
