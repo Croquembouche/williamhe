@@ -180,20 +180,20 @@ p {
   flex-direction: column;
   justify-content: flex-end;
   padding: clamp(28px, 5vw, 64px);
-  color: #fff;
+  color: var(--ink);
   background:
-    linear-gradient(90deg, rgba(11, 24, 25, 0.92), rgba(11, 24, 25, 0.62)),
-    url("assets/davos-cleveland-lidar.png") center / cover;
+    linear-gradient(135deg, rgba(235, 248, 241, 0.86), rgba(255, 255, 255, 0.98) 46%, rgba(235, 242, 255, 0.76)),
+    var(--panel);
 }
 
 .hero-copy .eyebrow {
-  color: #8ddbb7;
+  color: var(--green);
 }
 
 .lede {
   max-width: 760px;
   margin-top: 22px;
-  color: #eef6ef;
+  color: var(--muted);
   font-size: clamp(1.02rem, 1.8vw, 1.26rem);
 }
 
@@ -209,17 +209,17 @@ p {
   align-items: center;
   min-height: 42px;
   padding: 9px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.44);
-  color: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink);
   text-decoration: none;
   font-weight: 780;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .button.primary {
-  border-color: #8ddbb7;
-  background: #8ddbb7;
-  color: #10231c;
+  border-color: var(--green);
+  background: var(--green);
+  color: #ffffff;
 }
 
 .profile-card {
