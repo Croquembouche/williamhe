@@ -205,7 +205,6 @@ p {
 .statement-card,
 .project-card,
 .compact-grid article,
-.talk-grid article,
 .news-card,
 .funding-card,
 .contact-grid a {
@@ -332,7 +331,7 @@ p {
 .compact-grid p,
 .publication-item p,
 .publication-highlight-item p,
-.talk-grid p,
+.talk-item p,
 .news-card p,
 .funding-card p {
   color: var(--muted);
@@ -612,23 +611,53 @@ p {
 }
 
 .compact-grid,
-.talk-grid,
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
 }
 
-.compact-grid article,
-.talk-grid article {
+.compact-grid article {
   padding: 18px;
 }
 
-.talk-grid time {
+.talk-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.talk-item {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.talk-item:first-child {
+  border-top: 0;
+}
+
+.talk-item time {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-top: 2px;
   color: var(--blue);
+  font-size: 0.82rem;
   font-weight: 840;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.talk-item h2 {
+  margin-bottom: 7px;
+  font-size: clamp(1.08rem, 1.5vw, 1.34rem);
 }
 
 .contact-grid a {
@@ -831,7 +860,6 @@ p {
   .impact-grid,
   .project-grid,
   .compact-grid,
-  .talk-grid,
   .contact-grid,
   .funding-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -854,7 +882,6 @@ p {
   .two-column,
   .project-grid,
   .compact-grid,
-  .talk-grid,
   .contact-grid,
   .funding-grid {
     grid-template-columns: 1fr;
@@ -893,7 +920,8 @@ p {
 
   .publication-year,
   .publication-item,
-  .publication-highlight-item {
+  .publication-highlight-item,
+  .talk-item {
     grid-template-columns: 1fr;
   }
 
