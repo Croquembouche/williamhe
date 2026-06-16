@@ -332,6 +332,7 @@ p {
 .publication-item p,
 .publication-highlight-item p,
 .talk-item p,
+.teaching-item p,
 .news-card p,
 .funding-card p {
   color: var(--muted);
@@ -621,7 +622,8 @@ p {
   padding: 18px;
 }
 
-.talk-list {
+.talk-list,
+.teaching-list {
   display: grid;
   gap: 0;
   margin: 0;
@@ -631,7 +633,8 @@ p {
   border-bottom: 1px solid var(--line);
 }
 
-.talk-item {
+.talk-item,
+.teaching-item {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
   gap: 20px;
@@ -640,11 +643,13 @@ p {
   border-top: 1px solid var(--line);
 }
 
-.talk-item:first-child {
+.talk-item:first-child,
+.teaching-item:first-child {
   border-top: 0;
 }
 
-.talk-item time {
+.talk-item time,
+.teaching-meta {
   display: inline-block;
   margin-top: 2px;
   color: var(--blue);
@@ -655,7 +660,8 @@ p {
   text-transform: uppercase;
 }
 
-.talk-item h2 {
+.talk-item h2,
+.teaching-item h2 {
   margin-bottom: 7px;
   font-size: clamp(1.08rem, 1.5vw, 1.34rem);
 }
@@ -921,7 +927,8 @@ p {
   .publication-year,
   .publication-item,
   .publication-highlight-item,
-  .talk-item {
+  .talk-item,
+  .teaching-item {
     grid-template-columns: 1fr;
   }
 
