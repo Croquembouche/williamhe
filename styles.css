@@ -199,7 +199,6 @@ p {
 .project-card,
 .compact-grid article,
 .news-card,
-.funding-card,
 .contact-grid a {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -327,7 +326,7 @@ p {
 .talk-item p,
 .teaching-item p,
 .news-card p,
-.funding-card p {
+.funding-item p {
   color: var(--muted);
 }
 
@@ -510,51 +509,6 @@ p {
   font-size: 0.92rem;
 }
 
-.funding-summary span {
-  display: inline-block;
-  margin: 0 0 10px;
-  color: var(--gold);
-  font-size: 0.75rem;
-  font-weight: 840;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.funding-summary h2 {
-  margin-bottom: 10px;
-}
-
-.funding-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.funding-card {
-  padding: 18px;
-}
-
-.funding-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.funding-card-header span {
-  color: var(--gold);
-  font-size: 0.75rem;
-  font-weight: 840;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.funding-card-header time {
-  color: var(--blue);
-  font-weight: 820;
-}
-
 .project-cluster {
   margin-top: 30px;
 }
@@ -616,7 +570,8 @@ p {
 }
 
 .talk-list,
-.teaching-list {
+.teaching-list,
+.funding-list {
   display: grid;
   gap: 0;
   margin: 0;
@@ -627,7 +582,8 @@ p {
 }
 
 .talk-item,
-.teaching-item {
+.teaching-item,
+.funding-item {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
   gap: 20px;
@@ -637,12 +593,14 @@ p {
 }
 
 .talk-item:first-child,
-.teaching-item:first-child {
+.teaching-item:first-child,
+.funding-item:first-child {
   border-top: 0;
 }
 
 .talk-item time,
-.teaching-meta {
+.teaching-meta,
+.funding-meta {
   display: inline-block;
   margin-top: 2px;
   color: var(--blue);
@@ -651,6 +609,33 @@ p {
   letter-spacing: 0.08em;
   line-height: 1.25;
   text-transform: uppercase;
+}
+
+.funding-item {
+  grid-template-columns: minmax(136px, 0.16fr) minmax(0, 1fr);
+}
+
+.funding-summary {
+  margin-bottom: 30px;
+}
+
+.funding-summary .funding-meta,
+.funding-meta span {
+  color: var(--gold);
+}
+
+.funding-meta time,
+.funding-meta span {
+  display: block;
+}
+
+.funding-meta span {
+  margin-top: 8px;
+}
+
+.funding-item h2,
+.funding-item h3 {
+  margin: 0 0 7px;
 }
 
 .talk-item h2,
@@ -859,8 +844,7 @@ p {
   .impact-grid,
   .project-grid,
   .compact-grid,
-  .contact-grid,
-  .funding-grid {
+  .contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -880,10 +864,14 @@ p {
   .two-column,
   .project-grid,
   .compact-grid,
-  .contact-grid,
-  .funding-grid {
+  .contact-grid {
     grid-template-columns: 1fr;
     grid-column: auto;
+  }
+
+  .funding-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .hero-copy {
