@@ -145,13 +145,6 @@ main {
   margin-bottom: 30px;
 }
 
-.panel-heading p:last-child {
-  grid-column: 2;
-  max-width: 820px;
-  margin: -12px 0 0;
-  color: var(--muted);
-}
-
 .eyebrow {
   margin: 0 0 12px;
   color: var(--green);
@@ -882,7 +875,6 @@ p {
   }
 
   .panel-heading,
-  .panel-heading p:last-child,
   .home-grid,
   .impact-grid,
   .two-column,
