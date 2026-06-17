@@ -17,7 +17,7 @@
     <title>Yuankai (William) He | Autonomous Mobility Systems</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <script>document.documentElement.classList.replace("no-js", "js");</script>
-    <link rel="stylesheet" href="styles.css?v=20260617-wide-content">
+    <link rel="stylesheet" href="styles.css?v=20260617-demos">
   </head>
   <body>
     <a class="skip-link" href="#home">Skip to main content</a>
@@ -552,48 +552,86 @@
         </div>
 
         <div class="project-cluster">
-          <h2>Research-Grade Artifacts</h2>
-          <div class="project-grid">
-            <article class="project-card">
+          <h2>Interactive Demos</h2>
+          <div class="project-grid demo-project-grid">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <img src="assets/davos-cleveland-lidar.png" alt="DAVOS LiDAR and driving visualization">
               <span>Runtime / OS</span>
               <h3>SIM / DAVOS</h3>
-              <p>Freshness-aware middleware and autonomous-vehicle OS work deployed on UD AV platforms; up to 98% lower transport latency and 13.6 ft shorter emergency-braking distance at 40 mph.</p>
-              <a href="https://github.com/Croquembouche/DAVOS_SIM" target="_blank" rel="noopener noreferrer">Repository</a>
+              <p>Compare freshness-aware vehicle middleware against a baseline trace and watch latency, freshness, and stopping margin respond.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=davos" target="_blank" rel="noopener noreferrer">Try demo</a>
+                <a href="https://github.com/Croquembouche/DAVOS_SIM" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
             </article>
-            <article class="project-card">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <span>V2X / Infrastructure</span>
               <h3>IPI / OpenIntersection</h3>
-              <p>Open-source Intersection Programming Interface for software-defined roadsides: standardized APIs, J2735 helpers, UPER encoding, ROS/Mocar adapters, and V2X experiment tracking.</p>
-              <a href="https://github.com/Croquembouche/IPI" target="_blank" rel="noopener noreferrer">Repository</a>
+              <p>Operate a software-defined intersection: change phases, issue IPI requests, and inspect SPaT/MAP-style state updates.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=ipi" target="_blank" rel="noopener noreferrer">Try demo</a>
+                <a href="https://github.com/Croquembouche/IPI" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
             </article>
-            <article class="project-card">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <img src="assets/carscenes-attribute-distribution.png" alt="CARScenes dataset attribute distribution">
               <span>Dataset / Benchmark</span>
               <h3>CARScenes</h3>
-              <p>Semantic VLM dataset release workspace with schema, splits, validation scripts, benchmark reporting, and paper sources.</p>
-              <a href="https://github.com/Croquembouche/CARScenes" target="_blank" rel="noopener noreferrer">Repository</a>
+              <p>Filter a small semantic-scene browser and see how attributes, annotations, and VLM-style tasks are organized.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=carscenes" target="_blank" rel="noopener noreferrer">Try demo</a>
+                <a href="https://github.com/Croquembouche/CARScenes" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
             </article>
-            <article class="project-card">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <span>Digital Twin</span>
               <h3>DT_World</h3>
-              <p>Lidar-first digital-twin pipeline for synchronized driving data, tiled road meshes, PBR textures, semantic materials, object manifests, and OpenDRIVE maps.</p>
+              <p>Toggle LiDAR, mesh, semantic, and OpenDRIVE layers in a lightweight digital-twin scene built from precomputed outputs.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=dt-world" target="_blank" rel="noopener noreferrer">Try demo</a>
+              </div>
             </article>
-            <article class="project-card">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <span>Simulation</span>
               <h3>BlueICE</h3>
-              <p>Containerized CARLA, SUMO, Autoware, and hardware-in-the-loop co-simulation foundation for reproducible autonomous-driving experiments.</p>
-              <a href="https://github.com/Croquembouche/BlueICE" target="_blank" rel="noopener noreferrer">Repository</a>
+              <p>Step through a co-simulation control loop across CARLA, SUMO, Autoware, and hardware-in-the-loop modules.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=blueice" target="_blank" rel="noopener noreferrer">Try demo</a>
+                <a href="https://github.com/Croquembouche/BlueICE" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
             </article>
-            <article class="project-card">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <span>Testbed</span>
               <h3>ICAT</h3>
-              <p>Indoor Connected and Autonomous Testbed for vehicle computing, Autoware education, and connected autonomy demonstrations.</p>
+              <p>Switch between indoor localization, V2X, and teaching modes on a compact autonomous-driving testbed map.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=icat" target="_blank" rel="noopener noreferrer">Try demo</a>
+              </div>
             </article>
-            <article class="project-card">
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">Interactive demo</div>
               <span>Robotaxi Platform</span>
               <h3>STARTaxi / HydraU</h3>
-              <p>Academic autonomous ride-hailing platform on UD STAR Campus, connecting Autoware, DAVOS, vehicle operations, and student-built service interfaces.</p>
+              <p>Dispatch an academic robotaxi route and watch the operator state, autonomy mode, and passenger workflow change.</p>
+              <div class="project-links">
+                <a class="demo-link" href="demos/?demo=startaxi" target="_blank" rel="noopener noreferrer">Try demo</a>
+              </div>
+            </article>
+            <article class="project-card demo-card">
+              <div class="demo-ribbon">External demo</div>
+              <span>Autoware / RViz</span>
+              <h3>AutowareDEMO</h3>
+              <p>Static Three.js Autoware/RViz-style demo viewer for maps, trajectory, perception objects, camera views, and operator walkthroughs.</p>
+              <div class="project-links">
+                <a class="demo-link" href="https://croquembouche.github.io/AutowareDEMO/" target="_blank" rel="noopener noreferrer">Try demo</a>
+                <a href="https://github.com/Croquembouche/AutowareDEMO" target="_blank" rel="noopener noreferrer">Repository</a>
+              </div>
             </article>
           </div>
         </div>
@@ -601,7 +639,6 @@
         <div class="project-cluster">
           <h2>Autoware, V2X, and Vehicle Platforms</h2>
           <div class="compact-grid">
-            <article><h3>AutowareDEMO</h3><p>Static Three.js Autoware/RViz-style demo viewer for maps, trajectory, perception objects, camera views, and operator walkthroughs.</p><a href="https://github.com/Croquembouche/AutowareDEMO" target="_blank" rel="noopener noreferrer">Repository</a></article>
             <article><h3>V2X_Autoware</h3><p>ROS 2 workspace bridging CARLA traffic lights to J2735 SPaT/MAP messages and Autoware-facing V2X nodes.</p><a href="https://github.com/Croquembouche/V2X_Autoware" target="_blank" rel="noopener noreferrer">Repository</a></article>
             <article><h3>AutowareUniverse-Carla</h3><p>Autoware and CARLA co-simulation baseline with UD maps and BlueICE integration.</p><a href="https://github.com/Croquembouche/AutowareUniverse-Carla" target="_blank" rel="noopener noreferrer">Repository</a></article>
             <article><h3>UDAutoware</h3><p>University of Delaware Autoware.Universe workspace and maps for local autonomous-driving experiments.</p><a href="https://github.com/Croquembouche/UDAutoware" target="_blank" rel="noopener noreferrer">Repository</a></article>
