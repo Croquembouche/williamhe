@@ -526,7 +526,6 @@ p {
 }
 
 .project-card {
-  position: relative;
   overflow: hidden;
 }
 
@@ -559,55 +558,6 @@ p {
 
 .project-card a {
   margin-bottom: 18px;
-}
-
-.demo-card {
-  border-color: rgba(47, 125, 91, 0.38);
-  background:
-    linear-gradient(180deg, rgba(47, 125, 91, 0.06), rgba(255, 255, 255, 0) 42%),
-    var(--panel);
-}
-
-.demo-ribbon {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  z-index: 1;
-  display: inline-flex;
-  min-height: 28px;
-  align-items: center;
-  padding: 4px 10px;
-  border: 1px solid rgba(47, 125, 91, 0.22);
-  border-radius: 999px;
-  color: var(--green);
-  font-size: 0.72rem;
-  font-weight: 840;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-transform: uppercase;
-  background: rgba(247, 255, 250, 0.94);
-  backdrop-filter: blur(8px);
-}
-
-.project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 14px 18px 18px;
-}
-
-.project-card .project-links a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 34px;
-  margin: 0;
-}
-
-.project-card .project-links .demo-link {
-  padding: 6px 10px;
-  border: 1px solid rgba(47, 125, 91, 0.24);
-  border-radius: 8px;
-  background: rgba(47, 125, 91, 0.08);
 }
 
 .compact-grid,
