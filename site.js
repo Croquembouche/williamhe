@@ -52,5 +52,15 @@ window.addEventListener("hashchange", () => {
 
 activateSection(location.hash.replace("#", "") || "home", {
   updateHash: false,
-  scroll: Boolean(location.hash),
+  scroll: false,
 });
+
+window.addEventListener(
+  "load",
+  () => {
+    if (location.hash) {
+      window.scrollTo({ top: 0, left: 0 });
+    }
+  },
+  { once: true },
+);
