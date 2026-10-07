@@ -1,0 +1,309 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.72in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sc]{mathpazo}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\usepackage[colorlinks=true]{hyperref}
+
+\definecolor{cvlink}{HTML}{185A8D}
+
+\hypersetup{
+  pdftitle={Yuankai (William) He - Curriculum Vitae},
+  pdfauthor={Yuankai (William) He},
+  pdfsubject={Academic curriculum vitae},
+  linkcolor=cvlink,
+  urlcolor=cvlink,
+  citecolor=cvlink
+}
+
+\let\cvplainhref\href
+\renewcommand{\href}[2]{\cvplainhref{#1}{\uline{#2}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Yuankai (William) He \enspace | \enspace Curriculum Vitae \enspace | \enspace \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\linespread{1.03}
+\microtypesetup{protrusion=true,expansion=false}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.18em,topsep=0.16em,parsep=0pt,partopsep=0pt}
+
+\newcommand{\cvsection}[1]{%
+  \Needspace{5\baselineskip}%
+  \vspace{0.62em}%
+  {\large\scshape #1}\par
+  \vspace{0.12em}\hrule\vspace{0.32em}
+}
+
+\newcommand{\cvsubsection}[1]{%
+  \Needspace{3\baselineskip}%
+  \vspace{0.32em}%
+  {\bfseries #1}\par
+  \vspace{0.12em}
+}
+
+\newcommand{\cvsummary}[1]{%
+  {\itshape #1}\par
+  \vspace{0.18em}
+}
+
+\newcommand{\contactsep}{\enspace | \enspace}
+\newcommand{\cvleaditem}[2]{%
+  \Needspace{4\baselineskip}%
+  \item \textbf{#1}\par
+  \vspace{0.03em}%
+  #2%
+}
+\newcommand{\pubpdf}[1]{%
+  \unskip\nobreakspace\href{#1}{PDF}%
+}
+\newcommand{\pubcitation}[1]{%
+  \unskip\nobreakspace Cited by: \textbf{#1}%
+}
+\newcommand{\pubaccepted}[2]{%
+  \pubcitation{#1}\nobreakspace\href{#2}{PDF}%
+}
+\newcommand{\pubaccepteddoi}[3]{%
+  \pubcitation{#1}\nobreakspace\href{#2}{DOI}\nobreakspace\href{#3}{PDF}%
+}
+\newcommand{\pubresource}[2]{%
+  \unskip\space\href{#2}{#1}%
+}
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Yuankai (William) He}}\\[0.3em]
+Ph.D. Candidate in Computer Science, University of Delaware\\[0.3em]
+\href{mailto:willhe@udel.edu}{willhe@udel.edu}\contactsep
+\href{https://croquembouche.github.io/williamhe/}{Website}\contactsep
+\href{https://scholar.google.com/citations?user=mBSNk3UAAAAJ&hl=en&oi=ao}{Google Scholar}\contactsep
+\href{https://github.com/Croquembouche}{GitHub}\contactsep
+\href{https://orcid.org/0000-0002-8793-9939}{ORCID}
+\end{center}
+
+\cvsection{Research Interests}
+Cyber-Physical Intelligent Systems; V2X; ITS; Robotics; Digital Twin.
+
+\cvsection{Education}
+\begin{itemize}
+    \item \textbf{University of Delaware}, Ph.D.\ in Computer Science. Advisor: Weisong Shi. \hfill Expected Dec.\ 2026
+    \item \textbf{Wayne State University}, M.S.\ in Robotics. Advisor: Weisong Shi. \hfill May 2023
+    \item \textbf{Boston University}, B.S.\ in Computer Engineering. \hfill May 2019
+\end{itemize}
+
+\cvsection{Honors \& Recognition}
+\begin{itemize}
+    \item \textbf{Frank A. Pehrson Graduate Student Award for Outstanding Computer Science Research}.\\
+    UD Computer \& Information Sciences' most prestigious research award; single recipient. \hfill 2026
+    \item \textbf{Daniel L. Chester Graduate Fellowship Award}.\\
+    University of Delaware. Consecutive-year recipient. \hfill 2025, 2026
+\end{itemize}
+
+\cvsection{Research Record \& Leadership}
+\begin{itemize}
+    \cvleaditem{Robust physical intelligence from onboard execution to physical validation.}{Connects timely onboard execution, shared sensing and computing, and repeatable sim-to-real evaluation on two full-scale autonomous vehicles, C-V2X/private 5G, live roadway feeds, and digital twins.}
+    \cvleaditem{Multiple first-author papers and invited research talks.}{Published first-author work at IEEE IV, \textit{IEEE T-VT}, and \textit{IEEE Computer}, with additional papers at ICDCS, IEEE MOST, and HotStorage; invited to present at IEEE IV, UCI, and William \& Mary.}
+    \cvleaditem{Graduate proposal contributor on six funded proposals totaling \$1{,}140{,}416.}{Lead graduate researcher on five associated projects spanning NSF, TIER IV, and Toyota.}
+    \cvleaditem{Springer textbook and graduate autonomous-driving curriculum.}{Co-authored \textit{Introduction to Autonomous Driving}; designed and taught UD's graduate autonomous-driving course; and developed and taught the Autonomous Driving Academy.}
+\end{itemize}
+
+\cvsection{Publications}
+{\small\itshape Citation counts: Google Scholar, September 29, 2026.\par}
+\cvsubsection{Book}
+\begin{itemize}
+    \item W. Shi, \textbf{Y. He}. \textit{Introduction to Autonomous Driving}. Springer, 2025. \href{https://doi.org/10.1007/978-3-031-99485-2}{DOI}
+    \pubresource{Demo}{https://thecarlab.github.io/AVBook/}
+    \pubresource{Book Companion}{https://autonomousdrivingbook.org/book-chapters}
+\end{itemize}
+
+\cvsubsection{Peer-Reviewed Journal Articles}
+\begin{itemize}
+    \item \textbf{Y. He}, B. Wu, Z. Dong, J. Wan, W. Shi. ``Towards C-V2X Enabled Collaborative Autonomous Driving.'' \textit{IEEE Transactions on Vehicular Technology}, 72(12):15450--15462, 2023.\pubaccepteddoi{83}{https://doi.org/10.1109/TVT.2023.3299844}{https://par.nsf.gov/servlets/purl/10467122}
+    \item S. Lu, \textbf{Y. He}, W. Shi. ``Vehicle Computing: An Emerging Computing Paradigm for the Autonomous Driving Era.'' \textit{Journal of Computer Research and Development}, 62(1):2--21, 2025.\pubaccepteddoi{2}{https://doi.org/10.7544/issn1000-1239.202440538}{https://crad.ict.ac.cn/cn/article/pdf/preview/10.7544/issn1000-1239.202440538.pdf}
+    \item \textbf{Y. He}, W. Shi. ``A Vision for Transformative Intersections.'' \textit{IEEE Computer}, 57(12):58--68, 2024.\pubaccepteddoi{2}{https://doi.org/10.1109/MC.2024.3421963}{https://weisongshi.org/papers/He24-OpenIntersection.pdf}
+\end{itemize}
+
+\cvsubsection{Peer-Reviewed Conference and Workshop Papers}
+\begin{itemize}
+    \item Z. Tian, \textbf{Y. He}, B. Tian, R. Zhong, E. Foorginejad, W. Shi. ``ICAT: An Indoor Connected and Autonomous Testbed for Vehicle Computing.'' \textit{IEEE International Conference on Mobility, Operations, Services and Technologies (MOST)}, pp.\ 242--250, 2024.\pubaccepteddoi{19}{https://doi.org/10.1109/MOST60774.2024.00033}{https://weisongshi.org/papers/Tian24-ICAT.pdf}
+    \item Y. Wang, \textbf{Y. He}, R. Wang, W. Shi. ``Quantitative Analysis of Storage Requirement for Autonomous Vehicles.'' \textit{Proceedings of the 16th ACM Workshop on Hot Topics in Storage and File Systems (HotStorage '24)} (ACM SIGOPS workshop), pp.\ 71--78, 2024.\pubaccepteddoi{12}{https://doi.org/10.1145/3655038.3665948}{https://weisongshi.org/papers/Wang24-HotStorage.pdf}
+    \item B. Wu*, \textbf{Y. He}*, Z. Dong, J. Wan, J. Zhang, W. Shi. ``To Turn or Not To Turn, SafeCross is the Answer.'' \textit{IEEE 42nd International Conference on Distributed Computing Systems (ICDCS)} (IEEE Computer Society flagship conference), pp.\ 414--424, 2022. (*Equal contribution)\pubaccepteddoi{8}{https://doi.org/10.1109/ICDCS54860.2022.00047}{https://weisongshi.org/papers/wu22-SafeCross.pdf}
+    \item \textbf{Y. He}, W. Shi. ``A Faster and More Reliable Middleware for Autonomous Driving Systems.'' \textit{IEEE Intelligent Vehicles Symposium (IV)} (IEEE ITSS flagship conference), 2026.\pubaccepted{7}{https://weisongshi.org/papers/he26-sim.pdf}
+    \item \textbf{Y. He}, H. Chen, I. Safro, W. Shi. ``A Graph-Based Metric on Dataset Diversity and Redundancy Evaluation.'' \textit{IEEE Intelligent Vehicles Symposium (IV)} (IEEE ITSS flagship conference), 2026.\pubaccepted{0}{https://weisongshi.org/papers/he26-udrive.pdf}
+    \item \textbf{Y. He}, Y. Wang, B. Tian, W. Shi. ``DaVoS: An Instantaneous Safety Model for Autonomous Vehicles.'' \textit{Physical Intelligence: Systems and Applications (PISA) Workshop at IEEE MOST}, pp.\ 256--262, 2026.\pubaccepteddoi{0}{https://doi.org/10.1109/MOST69733.2026.00043}{https://weisongshi.org/papers/he26-DaVoS.pdf}
+    \item J. Shi, \textbf{Y. He}, Y. Wang, W. Shi. ``Can I Park Here? Understanding Complicated Parking Signs on the Street.'' \textit{IEEE MOST}, pp.\ 107--117, 2026.\pubaccepteddoi{0}{https://doi.org/10.1109/MOST69733.2026.00021}{https://weisongshi.org/papers/shi26-PaRC.pdf}
+\end{itemize}
+
+\cvsubsection{Manuscript Under Review}
+\begin{itemize}
+    \item \textbf{Y. He}, H. Chen, W. Shi. ``An Advanced Framework for Ultra-Realistic Simulation and Digital Twinning for Autonomous Vehicles.''
+    \pubcitation{11}\pubpdf{https://arxiv.org/pdf/2405.01328}
+    \item \textbf{Y. He}, W. Shi. ``CARScenes: Semantic VLM Dataset for Safe Autonomous Driving.''
+    \pubcitation{2}\pubpdf{https://arxiv.org/pdf/2511.10701}
+    \item Y. Wang, \textbf{Y. He}, B. Tian, L. Xian, W. Shi. ``DAVOS: An Autonomous Vehicle Operating System in the Vehicle Computing Era.''
+    \pubcitation{0}\pubpdf{https://arxiv.org/pdf/2601.05072}
+    \item Y. Wang, \textbf{Y. He}, W. Shi. ``AVS: A Computational and Hierarchical Storage System for Autonomous Vehicles.''
+    \pubcitation{0}\pubpdf{https://arxiv.org/pdf/2511.19453}
+\end{itemize}
+
+\cvsection{Proposal Writing Experience}
+\cvsummary{Graduate proposal contributor on three funded NSF proposals (\$970{,}416) and three
+industry proposals (\$170{,}000).}
+
+\cvsubsection{NSF Projects}
+\begin{itemize}
+    \Needspace{6\baselineskip}
+    \item \textbf{NSF CNS Collaborative Research: CSR: Small; No.\ 2426482.}\\
+    {\small\itshape CADaaS: Deterministic Communication and Predictive Computation for Connected Autonomous Driving as a Service.}\\
+    \textbf{Support:} \$273{,}555. \hfill Mar.\ 2025 -- Feb.\ 2028\\
+    \textbf{Role:} Lead Graduate Researcher; Graduate Proposal Contributor.\\
+    \Needspace{6\baselineskip}
+    \item \textbf{NSF ECCS Collaborative Research: CPS: Medium; No.\ 2311087.}\\
+    {\small\itshape Physics-Model-Based Neural Networks Redesign for CPS Learning and Control.}\\
+    \textbf{Support:} \$197{,}000. \hfill June 2023 -- May 2026\\
+    \textbf{Role:} Lead Graduate Researcher; Graduate Proposal Contributor.\\
+    \Needspace{6\baselineskip}
+    \item \textbf{NSF CNS Core: Small; No.\ 2140346.}\\
+    {\small\itshape Enabling Real-time, Scalable and Secure Collaborative Intelligence on the Edge.}\\
+    \textbf{Support:} \$499{,}861. \hfill Jan.\ 2022 -- Dec.\ 2024\\
+    \textbf{Role:} Graduate Research Contributor; Graduate Proposal Contributor.\\
+\end{itemize}
+
+\Needspace{8\baselineskip}
+\cvsubsection{Industry Projects}
+\begin{itemize}
+    \Needspace{5\baselineskip}
+    \item \textbf{\href{https://tier4.co.jp/en/}{TIER IV}: Design and Implementation of Infrastructure Programming Interface (IPI)}.\\
+    \textbf{Support:} \$60{,}000. \hfill 2024 -- 2025\\
+    \textbf{Role:} Lead Graduate Researcher and Project Lead; Graduate Proposal Contributor.\\
+    \Needspace{5\baselineskip}
+    \item \textbf{\href{https://pressroom.toyota.com/topic/research-development/}{Toyota}: Open Intersection Reference Design and Implementation}.\\
+    \textbf{Support:} \$60{,}000. \hfill 2023 -- 2024\\
+    \textbf{Role:} Lead Graduate Researcher and Project Lead; Graduate Proposal Contributor.\\
+    \Needspace{5\baselineskip}
+    \item \textbf{\href{https://tier4.co.jp/en/}{TIER IV}: Investigating the Effect of C-V2X on Autoware.Universe}.\\
+    \textbf{Support:} \$50{,}000. \hfill 2025 -- 2026\\
+    \textbf{Role:} Lead Graduate Researcher and Project Lead; Graduate Proposal Contributor.\\
+\end{itemize}
+
+\Needspace{12\baselineskip}
+\cvsection{Research Systems \& Open-Source Platforms}
+\cvsummary{Runtime, shared-infrastructure, and sim-to-real systems across embedded computers
+and two full-scale vehicles.}
+\begin{itemize}
+    \item \textbf{\href{https://autoware.org/about/why-autoware/}{Autoware Foundation leadership}.} API Workgroup Lead; Technical Steering Committee and Strategic Planning Committee member. Defines APIs, middleware, V2X interoperability, and development priorities for the world's largest open-source autonomous-driving software stack, used by 500+ companies and deployed across 30 vehicle types in 20 countries.
+    \item \textbf{SIM/DAVOS/DaVoS.} Designed newest-frame shared-memory sensor transport for ROS~2/Autoware. Reduced maximum observed latency by up to 98\% and p99 by approximately 96\%; the measured time saving equals 13.6~ft of travel at 40~mph, before accounting for downstream processing or braking. \textbf{Outputs:} \href{https://arxiv.org/abs/2510.11448}{SIM}; \href{https://arxiv.org/abs/2601.05072}{DAVOS}; \href{https://doi.org/10.1109/MOST69733.2026.00043}{DaVoS}; \href{https://github.com/Croquembouche/DAVOS_SIM}{code}.
+    \item \textbf{IPI/InfraSense.} Designed a CV/CAV API and authenticated roadway gateway; evaluated C-V2X/\allowbreak private~5G under mobility, load, weak signal, and restarts. \textbf{Outputs:} Edge4AV; \href{https://github.com/Croquembouche/IPI}{IPI}; InfraSense.
+    \item \textbf{BlueICE/CARScenes/S-Score.} Built tools for sim-to-real validation, scenario data, and dataset coverage. \textbf{Outputs:} \href{https://arxiv.org/abs/2405.01328}{BlueICE}; \href{https://arxiv.org/abs/2511.10701}{CARScenes}; \href{https://weisongshi.org/papers/he26-udrive.pdf}{S-Score}.
+\end{itemize}
+
+\cvsection{Teaching \& Mentoring Experience}
+\cvsummary{Designed the autonomous-driving course, taught two graduate courses, and led a hands-on program
+for high-school students.}
+
+\cvsubsection{Graduate-Level Courses}
+\begin{itemize}
+    \item \textbf{Introduction to Autonomous Driving}, University of Delaware, CIS. \hfill Fall~2025, Fall~2026\\
+    \textbf{Role: Course Designer and Instructor.} Designed and taught one of three designated courses in UD's autonomous-driving specialization for M.S.\ AI and CS students. The inaugural Fall 2025 class enrolled 20+ students across multiple departments; the current Fall 2026 offering enrolls 20 students. The course uses 1/10-scale and full-size autonomous vehicles. \textbf{Companion Websites:} \href{https://thecarlab.github.io/AVBook/}{Demo}; \href{https://autonomousdrivingbook.org/book-chapters}{Book Companion}.
+    \Needspace{3\baselineskip}
+    \item \textbf{Introduction to Mobile Robot Programming}, University of Delaware, CIS. \hfill Summer~2024\\
+    \textbf{Role: Instructor of Record.} Taught project-based robot programming with ICAT and Autoware.
+\end{itemize}
+
+\cvsubsection{Pre-College Summer Program}
+\begin{itemize}
+    \item \textbf{ADA for High-School Students}, University of Delaware. \hfill Summer~2025, Summer~2026\\
+    \textbf{Role: Program Designer and Instructor.} Designed and taught the inaugural five-day Autonomous Driving Academy for High-School Students, serving 14 students from seven states. Students presented and demonstrated their autonomous-driving projects to parents and friends; the academy returned for a second offering in 2026.
+\end{itemize}
+
+\Needspace{11\baselineskip}
+\cvsubsection{Research Mentoring \& Student Programs}
+\begin{itemize}
+    \item \textbf{CISC Graduate Promotion Unit (GPU)}. \hfill 2024 -- present\\
+    \textbf{Role:} Founder and President. Links undergraduates to researchers and graduate students to alumni.
+    \item \textbf{Undergraduate Research Mentor}. \hfill 2024\\
+    Vertically Integrated Projects (VIP): Dustin (Duy Duc) Tran.\\
+    DSU--UD Summer Engineering Research Experience: Jared Bryant.
+\end{itemize}
+
+\cvsection{Invited Talks \& Tutorials}
+\cvsummary{Five invited research talks plus selected tutorials and live autonomous-vehicle demonstrations.}
+\cvsubsection{Invited Talks}
+\begin{itemize}
+    \item ``A Closed-Loop System-Level Digital Twin to Evaluate Connected and Autonomous Mobility.''\\
+    Digital Twins for Intelligent Vehicles: From Agent-Level to System-Level Twins Workshop, IEEE Intelligent Vehicles Symposium. \hfill 2026
+    \item ``Digital Twins for Autonomy Verification and Validation.''\\
+    UCI CADRI Workshop, University of California, Irvine. \hfill 2025
+    \item ``Design of V2X Node in Autoware.''\\
+    Autoware Foundation API Workgroup. \hfill 2025
+    \item ``The Need for Digital Twins and Simulation for Autonomous Vehicle Testing.''\\
+    College of William \& Mary. \hfill 2024
+    \Needspace{2\baselineskip}
+    \item ``Using Digital Twin for AV System Verification.''\\
+    Autoware Foundation Centers of Excellence. \hfill 2024
+\end{itemize}
+
+\Needspace{12\baselineskip}
+\cvsubsection{Tutorials, Demonstrations \& Selected Presentations}
+\begin{itemize}
+    \item ``The Autoware Pipeline---Concepts and Basic Use.''\\
+    IEEE IV Autoware Tutorial. \hfill 2026
+    \item ``CARLab: CAV in the Autoware Ecosystem.''\\
+    IEEE IV Autoware Workshop. \hfill 2026
+    \item ``STARTaxi Robotaxi Demonstration.'' \href{https://www.youtube.com/watch?v=yeX6p5nSqgg}{Demo Video 1}; \href{https://www.youtube.com/watch?v=v4coj6eYNyY}{Demo Video 2}.\\
+    IEEE MOST Demonstration. \hfill 2025
+    \item ``An Advanced Framework for Ultra-Realistic Simulation and Digital Twinning for AV.''\\
+    Transportation Research Board Annual Meeting. \hfill 2025
+    \item ``Sim-to-Real and Real-to-Sim Indoor Testbed.''\\
+    IEEE MOST Tutorial. \hfill 2024
+    \item ``Autoware and CAV Tutorials.''\\
+    AutoSens Detroit and Detroit Auto Show. \hfill 2023, 2024
+\end{itemize}
+
+\cvsection{Professional Service}
+\cvsummary{Conference organization, program committees, and peer review.}
+\begin{itemize}
+    \item \textbf{IEEE MOST 2025}. Field Demo Chair.
+    \item \textbf{SE4ADS at ICSE 2025}. Program Committee Member.
+    \item \textbf{CAV@ASPLOS 2024}. Program Committee Member.
+    \item \textbf{Reviewer, 2022--2026}. AAAI; CVPR; TRB Annual Meeting; IEEE WCNC, VTC, SEC, and MOST; \textit{ACM Computing Surveys}; and \textit{Multimedia Tools and Applications}.
+\end{itemize}
+
+\Needspace{10\baselineskip}
+\cvsection{Industry Research Projects}
+\cvsummary{Three automotive R\&D appointments spanning AV perception, driver interaction, and
+cyber-physical testing, with production deliverables and an issued patent.}
+
+\cvsubsection{\href{https://torc.ai/}{Torc Robotics}: Autonomous-Vehicle Perception Data}
+\begin{itemize}
+    \item \textbf{Role:} Machine Learning Engineer L2, full-time co-op. \hfill Summer 2023\\
+    \textbf{Project:} Perception-model training data for autonomous vehicles.\\
+    \textbf{Output:} Production Perception-Training Datasets.
+\end{itemize}
+
+\cvsubsection{\href{https://www.joysonsafety.com/}{Joyson Safety Systems}: Driver Monitoring and Steering-Wheel Interaction}
+\begin{itemize}
+    \item \textbf{Role:} Integration Engineer. \hfill Oct.\ 2019 -- Oct.\ 2020\\
+    \textbf{Project:} GM Hands-On-Wheels driver-interaction program.\\
+    \textbf{Output:} GM Hands-On-Wheels Systems Integration and Validation.
+\end{itemize}
+
+\cvsubsection{\href{https://global.uisee.com/}{UISEE Technology}: Cyber-Physical Testing for Autonomous Shuttles}
+\begin{itemize}
+    \item \textbf{Role:} R\&D Intern, Autonomous Driving Division. \hfill Summer 2018\\
+    \textbf{Project:} Cyber-physical test-system design for autonomous shuttles.\\
+    \textbf{Output:} Issued Chinese Patent \href{https://patents.google.com/patent/CN109357900B/en}{CN109357900B}. Co-Inventor.
+\end{itemize}
+
+\end{document}
